@@ -136,6 +136,7 @@ RUN rm -rf /var/cache/apk/* && \
     tools/configure -save -set {Plugins}{LdapNgPlugin}{Enabled}='0' && \
     tools/configure -save -set {XSendFileContrib}{Header}='X-Accel-Redirect' && \
     tools/configure -save -set {XSendFileContrib}{Location}='/files' && \
+    tools/configure -save -set  {PROXY}{UseForwardedHeaders}='1' && \
     rm -fr /var/www/foswiki/working/configure/download/* && \
     rm -fr /var/www/foswiki/working/configure/backup/* && \
     mkdir -p /run/nginx && \
