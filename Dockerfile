@@ -2,11 +2,11 @@ FROM alpine:edge
 
 ENV PERL_MM_USE_DEFAULT 1
 
-ENV FOSWIKI_LATEST_URL https://github.com/foswiki/distro/releases/download/FoswikiRelease02x01x08/Foswiki-2.1.8.tgz
+ENV FOSWIKI_LATEST_URL https://github.com/foswiki/distro/releases/download/FoswikiRelease02x01x09/Foswiki-2.1.9.tgz
 
-ENV FOSWIKI_LATEST_SHA1 7b10773a9e54ce1580d3f98e7162d972fc2a761b
+ENV FOSWIKI_LATEST_SHA1 740626b86a36acc3afc51c67e2965ff3db1df318
 
-ENV FOSWIKI_LATEST Foswiki-2.1.8
+ENV FOSWIKI_LATEST Foswiki-2.1.9
 
 RUN rm -rf /var/cache/apk/* && \
     rm -rf /tmp/* && \
